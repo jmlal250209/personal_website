@@ -40,7 +40,7 @@
 
 ## Blog / Notes
 
-📝 Coming soon — planning to document my learning journey here.
+📝 JiamingLiu(jiamingliu.dev)
 
 ---
 
