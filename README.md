@@ -1,58 +1,98 @@
-# Hi there, I'm Jiaming 👋
+# Jiaming Liu — Portfolio Website
 
-[![Email](https://img.shields.io/badge/Email-liuj20%40tcd.ie-blue?style=for-the-badge&logo=gmail&logoColor=white)](mailto:liuj20@tcd.ie)
-[![Trinity College Dublin](https://img.shields.io/badge/Trinity%20College%20Dublin-CS%20Undergrad-003366?style=for-the-badge)](https://www.tcd.ie)
-[![Website](https://img.shields.io/badge/Website-JiamingLiu.dev-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jiamingliu.dev)
+This repository contains my personal portfolio website, built to showcase my projects, technical skills, and development journey as a Computer Science student at Trinity College Dublin.
 
 ---
 
-## About Me
+## 🌐 Live Website
 
-I'm a Computer Science student at **Trinity College Dublin** with a growing interest in **AI, backend development, and systems design**.
-
-- 🎓 Studying **Computer Science** at TCD  
-- 🌱 Currently learning **Java, Python, AI, and Systems Programming**
-- 🔧 Building portfolio projects to strengthen real-world engineering skills
-- 🚀 Exploring **backend engineering, intelligent systems, and scalable software**
+👉 https://jiamingliu.dev
 
 ---
 
-## Projects
+## 📌 Overview
 
-> More projects are on the way — currently building and polishing new work for my portfolio.
+This portfolio serves as my central online presence. It highlights selected projects, technical interests, and my progression in areas such as AI, backend development, and systems programming.
 
-| Project | Description | Stack |
-|--------|-------------|-------|
-| 🔨 In Progress | A new summer project currently under development | Python · Java |
+The site is designed with simplicity and performance in mind, using a static architecture and deployed via Vercel.
 
 ---
 
-## Skills
+## 🚀 Tech Stack
 
-### Languages
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+- HTML5
+- CSS3
+- JavaScript
+- Vercel (Deployment)
 
 ---
 
-## Blog / Notes
+## ✨ Features
 
-[![JiamingLiu](https://img.shields.io/badge/Visit-jiamingliu.dev-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://jiamingliu.dev)
-
----
-
-## Contact
-
-📫 Reach me at: **[liuj20@tcd.ie](mailto:liuj20@tcd.ie)**
+- Clean and minimal portfolio layout
+- Project showcase section
+- Personal introduction
+- Fast static deployment
+- Responsive design (ongoing improvements)
 
 ---
 
-<p align="center">
-  Thanks for stopping by!
-</p>
+## 🛠️ Local Development
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+Run locally:
+
+- Open `index.html` directly in your browser
+
+---
+
+## 📁 Project Structure
+
+```bash
+.
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+```
+
+---
+
+## 📈 Future Improvements
+
+This project is actively maintained and will continue to evolve.
+
+Planned updates include:
+
+- Adding more featured projects
+- Improving UI/UX design
+- Enhancing mobile responsiveness
+- Adding animations and interactions
+- Potential migration to React or Next.js
+
+---
+
+## 🎯 Purpose
+
+The purpose of this project is to:
+
+- Build a professional online presence
+- Showcase my technical work
+- Track my growth as a developer
+- Prepare for internships and future opportunities
+
+---
+
+## 👤 Author
+
+**Jiaming Liu**  
+Computer Science @ Trinity College Dublin
+
+📫 liuj20@tcd.ie  
+🌐 https://jiamingliu.dev
