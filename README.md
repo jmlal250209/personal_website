@@ -40,7 +40,7 @@
 
 ## Blog / Notes
 
-📝 JiamingLiu(jiamingliu.dev)
+📝 JiamingLiu(https://jiamingliu.dev)
 
 ---
 
