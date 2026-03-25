@@ -21,9 +21,6 @@ export const metadata: Metadata = {
     description: 'Computer Science undergraduate at Trinity College Dublin, building projects in software engineering, systems, and AI.',
     images: ['/images/og-image.png'],
   },
-  icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text y='.9em' font-size='60' font-family='Inter,Arial,sans-serif' font-weight='700' fill='white' x='50%' text-anchor='middle' dominant-baseline='hanging' dy='12'>JL</text></svg>",
-  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
