@@ -12,16 +12,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JMLal250209/Jiaming_portfolio.git"
+    "url": "git+https://github.com/JMLal250209/Personal_website.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/JMLal250209/Jiaming_portfolio/issues"
+    "url": "https://github.com/JMLal250209/Personal_website/issues"
   },
-  "homepage": "https://github.com/JMLal250209/Jiaming_portfolio#readme",
+  "homepage": "https://github.com/JMLal250209/Personal_website#readme",
   "dependencies": {
     "next": "^16.2.1",
     "react": "^19.2.4",

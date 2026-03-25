@@ -14,15 +14,16 @@ This repository contains my personal portfolio website, built to showcase my pro
 
 This portfolio serves as my central online presence. It highlights selected projects, technical interests, and my progression in areas such as AI, backend development, and systems programming.
 
-The site is designed with simplicity and performance in mind, using a static architecture and deployed via Vercel.
+The site is built with Next.js and deployed via Vercel.
 
 ---
 
 ## 🚀 Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
+- Next.js 16
+- React 19
+- TypeScript
+- CSS (global styles)
 - Vercel (Deployment)
 
 ---
@@ -32,7 +33,7 @@ The site is designed with simplicity and performance in mind, using a static arc
 - Clean and minimal portfolio layout
 - Project showcase section
 - Personal introduction
-- Fast static deployment
+- Fast deployment via Vercel
 - Responsive design (ongoing improvements)
 
 ---
@@ -42,24 +43,35 @@ The site is designed with simplicity and performance in mind, using a static arc
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/JMLal250209/Personal_website.git
+cd Personal_website
 ```
 
-Run locally:
+Install dependencies and run locally:
 
-- Open `index.html` directly in your browser
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
 ## 📁 Project Structure
 
-```bash
+```
 .
-├── index.html
-├── style.css
-├── script.js
-└── assets/
+├── app/
+│   ├── globals.css
+│   ├── icon.svg
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── images/
+├── public/
+├── next.config.ts
+├── tsconfig.json
+└── package.json
 ```
 
 ---
@@ -70,11 +82,11 @@ This project is actively maintained and will continue to evolve.
 
 Planned updates include:
 
+- **AI Chatbot (AI Avatar)** — building a conversational AI trained on my background, projects, and personality to act as my digital representative on the site
 - Adding more featured projects
 - Improving UI/UX design
 - Enhancing mobile responsiveness
 - Adding animations and interactions
-- Potential migration to React or Next.js
 
 ---
 
@@ -91,8 +103,8 @@ The purpose of this project is to:
 
 ## 👤 Author
 
-**Jiaming Liu**  
+**Jiaming Liu**
 Computer Science @ Trinity College Dublin
 
-📫 liuj20@tcd.ie  
+📫 liuj20@tcd.ie
 🌐 https://jiamingliu.dev
