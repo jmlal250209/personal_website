@@ -101,6 +101,21 @@ export default function Home() {
           <h2>Projects</h2>
           <div className="cards">
             <div className="card">
+              <h3>Student Housing & Roommate Matching Platform</h3>
+              <p>
+                A group project at TCD. Built scalable backend services with Python and AWS
+                DynamoDB supporting real-time user–property matching. Designed RESTful APIs
+                for property interests and user interactions, developed core matching logic,
+                and implemented polling-based real-time messaging between users.
+              </p>
+              <div className="card-footer">
+                <span className="chip chip-accent">Python</span>
+                <span className="chip chip-accent">AWS DynamoDB</span>
+                <span className="chip chip-accent">REST API</span>
+                <span className="chip chip-accent">JavaScript</span>
+              </div>
+            </div>
+            <div className="card">
               <h3>Portfolio Website</h3>
               <p>
                 My personal website built with Next.js, deployed on Vercel to showcase
