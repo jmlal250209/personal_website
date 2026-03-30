@@ -116,6 +116,25 @@ export default function Home() {
               </div>
             </div>
             <div className="card">
+              <h3>MedML Forge</h3>
+              <p>
+                A privacy-preserving ML pipeline for clinical researchers. Trains models on
+                sensitive patient data entirely locally — no cloud, no data leakage. Features
+                a six-stage workflow (ingest → preview → clean → configure → train → evaluate)
+                and an on-device AI co-pilot powered by Qwen 2.5 via llama.cpp.
+              </p>
+              <div className="card-footer">
+                <span className="chip chip-accent">React</span>
+                <span className="chip chip-accent">Python</span>
+                <span className="chip chip-accent">PyTorch</span>
+                <span className="chip chip-accent">Flask</span>
+                <span className="chip chip-accent">LLM</span>
+                <a href="https://github.com/christofilojohn/medml" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '4px 12px', fontSize: '13px' }}>
+                  Source →
+                </a>
+              </div>
+            </div>
+            <div className="card">
               <h3>AI Chatbot — Portfolio Avatar</h3>
               <p>
                 An AI chatbot built with RAG and agentic techniques, designed to act as an
