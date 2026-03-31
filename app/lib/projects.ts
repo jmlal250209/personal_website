@@ -46,7 +46,7 @@ export const projects: Project[] = [
       "Designing a NoSQL schema on DynamoDB for a relational-style matching problem",
       "Building and documenting RESTful APIs consumed by a separate frontend team",
       "Collaborating across backend, frontend, and design in a structured group project",
-      "Implementing real-time-like features (polling) without a dedicated WebSocket layer",
+      "Implementing messaging features using polling-based retrieval for real-time communication between matched users",
     ],
     futurePlans: [
       "Push notification system for real-time match and message alerts",
