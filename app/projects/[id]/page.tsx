@@ -108,10 +108,16 @@ export default async function ProjectDetailPage({
         )}
 
         {/* Screenshots */}
-        {project.screenshots && project.screenshots.length > 0 && (
+        {!project.hideScreenshots && (
           <section className="detail-section">
             <div className="detail-section-label">Screenshots</div>
-            <ScreenshotsGallery screenshots={project.screenshots} />
+            {project.screenshots && project.screenshots.length > 0 ? (
+              <ScreenshotsGallery screenshots={project.screenshots} />
+            ) : (
+              <div className="detail-screenshot-placeholder">
+                Screenshots coming soon
+              </div>
+            )}
           </section>
         )}
 

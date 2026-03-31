@@ -22,6 +22,7 @@ export interface Project {
   learnedPoints?: string[];
   futurePlans?: string[];
   hideDetailPage?: boolean;
+  hideScreenshots?: boolean;
 }
 
 export const projects: Project[] = [
@@ -66,6 +67,7 @@ export const projects: Project[] = [
       "Auto-deploys to Vercel on every push to main",
     ],
     overviewLabel: "How I Built This",
+    hideScreenshots: true,
     gradient: "linear-gradient(135deg, #1a0a3e 0%, #0f172a 100%)",
     learnedIntro: "This portfolio is a living project — here's what building it has taught me so far.",
     learnedPoints: [
