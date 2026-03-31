@@ -470,6 +470,12 @@ footer {
   opacity: 1;
 }
 
+@media (hover: none) {
+  .modal-banner-overlay {
+    opacity: 1;
+  }
+}
+
 .modal-banner-cta {
   color: #fff;
   font-size: 15px;
