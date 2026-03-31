@@ -1,3 +1,5 @@
+import ProjectsSection from "./components/ProjectsSection";
+
 export default function Home() {
   return (
     <>
@@ -99,72 +101,7 @@ export default function Home() {
         <section id="projects">
           <div className="section-label">Work</div>
           <h2>Projects</h2>
-          <div className="cards">
-            <div className="card">
-              <h3>Student Housing & Roommate Matching Platform</h3>
-              <p>
-                A group project at TCD. Built scalable backend services with Python and AWS
-                DynamoDB supporting real-time user–property matching. Designed RESTful APIs
-                for property interests and user interactions, developed core matching logic,
-                and implemented polling-based real-time messaging between users.
-              </p>
-              <div className="card-footer">
-                <span className="chip chip-accent">Python</span>
-                <span className="chip chip-accent">AWS DynamoDB</span>
-                <span className="chip chip-accent">REST API</span>
-                <span className="chip chip-accent">JavaScript</span>
-              </div>
-            </div>
-            <div className="card">
-              <h3>Portfolio Website</h3>
-              <p>
-                My personal website built with Next.js, deployed on Vercel to showcase
-                my work, skills, and future projects.
-              </p>
-              <div className="card-footer">
-                <span className="chip chip-accent">Next.js</span>
-                <span className="chip chip-accent">TypeScript</span>
-                <span className="chip chip-accent">CSS</span>
-                <a href="https://github.com/JMLal250209/Personal_website" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '4px 12px', fontSize: '13px' }}>
-                  Source →
-                </a>
-              </div>
-            </div>
-            <div className="card">
-              <h3>MedML Forge</h3>
-              <p>
-                A privacy-preserving ML pipeline for clinical researchers. Trains models on
-                sensitive patient data entirely locally — no cloud, no data leakage. Features
-                a six-stage workflow (ingest → preview → clean → configure → train → evaluate)
-                and an on-device AI co-pilot powered by Qwen 2.5 via llama.cpp.
-              </p>
-              <div className="card-footer">
-                <span className="chip chip-accent">React</span>
-                <span className="chip chip-accent">Python</span>
-                <span className="chip chip-accent">PyTorch</span>
-                <span className="chip chip-accent">Flask</span>
-                <span className="chip chip-accent">LLM</span>
-                <a href="https://github.com/christofilojohn/medml" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '4px 12px', fontSize: '13px' }}>
-                  Source →
-                </a>
-              </div>
-            </div>
-            <div className="card">
-              <h3>AI Chatbot — Portfolio Avatar</h3>
-              <p>
-                An AI chatbot built with RAG and agentic techniques, designed to act as an
-                interactive AI version of me within this portfolio. Future extensions include
-                a translation AI agent and a learning companion agent.
-              </p>
-              <div className="card-footer">
-                <span className="chip chip-accent">Python</span>
-                <span className="chip chip-accent">LangChain</span>
-                <span className="chip chip-accent">RAG</span>
-                <span className="chip chip-accent">AI Agents</span>
-                <span className="chip">In progress</span>
-              </div>
-            </div>
-          </div>
+          <ProjectsSection />
         </section>
 
         {/* Skills */}
