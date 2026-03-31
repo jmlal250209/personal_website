@@ -17,7 +17,8 @@ export interface Course {
   highlights: string[];
   gradient: string;
   imageSrc?: string;
-  learned?: string;
+  learnedIntro?: string;
+  learnedPoints?: string[];
 }
 
 export const courses: Course[] = [

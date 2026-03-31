@@ -15,7 +15,10 @@ export interface Project {
   highlights: string[];
   gradient: string;
   imageSrc?: string;
-  learned?: string;
+  screenshots?: { src: string; caption: string }[];
+  demoUrl?: string;
+  learnedIntro?: string;
+  learnedPoints?: string[];
 }
 
 export const projects: Project[] = [
@@ -66,23 +69,46 @@ export const projects: Project[] = [
     shortDesc:
       "A privacy-preserving ML pipeline for clinical researchers. Trains models on sensitive patient data entirely locally — no cloud, no data leakage.",
     longDesc:
-      "MedML Forge is a desktop application that gives clinical researchers a safe, local-first environment to train and evaluate machine learning models on sensitive patient data. The entire pipeline runs on-device: no data ever leaves the machine. Built with a React frontend and a Python/Flask backend, the app guides users through a six-stage workflow — ingest, preview, clean, configure, train, evaluate — with an embedded AI co-pilot (Qwen 2.5 via llama.cpp) that answers questions and explains results in plain language.",
-    tags: ["React", "Python", "PyTorch", "Flask", "LLM", "llama.cpp"],
+      "MedML Forge is a hackathon project built to let clinicians and medical professionals train ML models directly on their own machines — no coding expertise required, no data ever leaving the device. Privacy is guaranteed by architecture, not just policy. The app guides users through a seven-stage workflow (scan, preview, cleanup, configure, train, evaluate, gallery) with an on-device AI co-pilot powered by Qwen 2.5 via llama.cpp that explains ML concepts in plain language and grounds its suggestions in the user's actual metrics.",
+    tags: ["React", "Python", "PyTorch", "Flask", "LLM", "llama.cpp", "Hackathon"],
     links: [
       {
         label: "GitHub",
         url: "https://github.com/christofilojohn/medml",
         primary: true,
       },
+      {
+        label: "Devpost",
+        url: "https://devpost.com/software/medml",
+        primary: false,
+      },
     ],
     highlights: [
-      "Fully local pipeline — no data ever leaves the user's machine",
-      "Six-stage guided workflow: ingest → preview → clean → configure → train → evaluate",
-      "On-device AI co-pilot powered by Qwen 2.5 via llama.cpp",
-      "Supports multiple ML model types with configurable hyperparameters",
-      "Built with React + Flask; packaged as a cross-platform desktop app",
+      "Fully local pipeline — patient data never leaves the device",
+      "Seven-stage guided workflow: scan → preview → cleanup → configure → train → evaluate → gallery",
+      "On-device AI co-pilot (Qwen 2.5 via llama.cpp) explains parameters in plain language",
+      "Live training metrics streamed to the UI via Server-Sent Events",
+      "DICOM support and permutation-based feature selection for medical datasets",
+      "Replaces technical jargon with illustrated parameter cards for non-expert users",
     ],
+    screenshots: [
+      { src: "/images/projects/medml/Dataset%20Loading.png",     caption: "Step 1 — Load Your Dataset" },
+      { src: "/images/projects/medml/Dataset%20Overview.png",    caption: "Step 2 — Dataset Preview" },
+      { src: "/images/projects/medml/Dataset%20Cleanup.png",     caption: "Step 3 — Data Cleanup" },
+      { src: "/images/projects/medml/Parameter%20Calibration.png", caption: "Step 4 — Calibrate Parameters" },
+      { src: "/images/projects/medml/Feature%20Selection.png",   caption: "Step 4 — Feature Selection" },
+      { src: "/images/projects/medml/Model%20Evaluation.png",    caption: "Step 5 — Evaluation Results" },
+      { src: "/images/projects/medml/Model%20Gallery.png",       caption: "Model Gallery" },
+    ],
+    demoUrl: "https://www.youtube.com/embed/fWWPmobwLvE",
     gradient: "linear-gradient(135deg, #0d2e1f 0%, #0f172a 100%)",
+    learnedIntro: "My first hackathon — went in to learn the process, came out with much more than expected.",
+    learnedPoints: [
+      "How ML models are trained and evaluated end-to-end in a real app, not just a notebook",
+      "Deploying a locally-running LLM alongside a backend pipeline and a live UI",
+      "Collaborating fast under tight time constraints — breaking work down and staying unblocked",
+      "Keeping momentum in a small team when there's no time to overthink",
+    ],
   },
   {
     id: "chatbot",

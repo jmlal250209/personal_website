@@ -88,9 +88,24 @@ export default async function CourseDetailPage({
         {/* What I Learned */}
         <section className="detail-section">
           <div className="detail-section-label">What I Learned</div>
-          <p className="detail-text detail-text-placeholder">
-            {course.learned ?? "Still in progress — notes and reflections coming soon."}
-          </p>
+          {course.learnedPoints ? (
+            <>
+              {course.learnedIntro && (
+                <p className="detail-text" style={{ marginBottom: "14px" }}>
+                  {course.learnedIntro}
+                </p>
+              )}
+              <ul className="detail-highlights">
+                {course.learnedPoints.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <p className="detail-text detail-text-placeholder">
+              Still in progress — notes and reflections coming soon.
+            </p>
+          )}
         </section>
 
         {/* Certificate */}

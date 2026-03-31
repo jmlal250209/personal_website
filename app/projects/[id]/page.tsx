@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProjectById, projects } from "@/app/lib/projects";
+import ScreenshotsGallery from "@/app/components/ScreenshotsGallery";
 
 export async function generateStaticParams() {
   return projects.map((p) => ({ id: p.id }));
@@ -91,12 +92,31 @@ export default async function ProjectDetailPage({
           </ul>
         </section>
 
+        {/* Demo */}
+        {project.demoUrl && (
+          <section className="detail-section">
+            <div className="detail-section-label">Demo</div>
+            <div className="detail-video-wrapper">
+              <iframe
+                src={project.demoUrl}
+                title={`${project.title} demo`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </section>
+        )}
+
         {/* Screenshots */}
         <section className="detail-section">
           <div className="detail-section-label">Screenshots</div>
-          <div className="detail-screenshot-placeholder">
-            Screenshots coming soon
-          </div>
+          {project.screenshots && project.screenshots.length > 0 ? (
+            <ScreenshotsGallery screenshots={project.screenshots} />
+          ) : (
+            <div className="detail-screenshot-placeholder">
+              Screenshots coming soon
+            </div>
+          )}
         </section>
 
         {/* Tech Stack */}
@@ -114,9 +134,24 @@ export default async function ProjectDetailPage({
         {/* What I Learned */}
         <section className="detail-section">
           <div className="detail-section-label">What I Learned</div>
-          <p className="detail-text detail-text-placeholder">
-            {project.learned ?? "Reflections coming soon — check back later."}
-          </p>
+          {project.learnedPoints ? (
+            <>
+              {project.learnedIntro && (
+                <p className="detail-text" style={{ marginBottom: "14px" }}>
+                  {project.learnedIntro}
+                </p>
+              )}
+              <ul className="detail-highlights">
+                {project.learnedPoints.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <p className="detail-text detail-text-placeholder">
+              Reflections coming soon — check back later.
+            </p>
+          )}
         </section>
 
         {/* Links */}
