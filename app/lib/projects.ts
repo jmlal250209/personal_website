@@ -155,7 +155,13 @@ export const projects: Project[] = [
     longDesc:
       "A personal project building an AI chatbot from the ground up using the Claude API. The focus has been on getting the architecture right: a modular backend that handles message routing and user–AI interaction, a frontend chat interface, and a system structured for extensibility — so features like memory, RAG, and multiple AI agents can be layered in over time. The goal is to build this once as a solid foundation, then integrate it across different surfaces.",
     tags: ["Claude API", "Python", "RAG", "LLMs"],
-    links: [],
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/JMLal250209/ai-chatbot",
+        primary: true,
+      },
+    ],
     status: "In progress",
     highlights: [
       "Built an AI-powered chatbot using the Claude API for real-time conversational interactions",
