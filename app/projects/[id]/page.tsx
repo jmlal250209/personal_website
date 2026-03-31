@@ -124,7 +124,7 @@ export default async function ProjectDetailPage({
           <div className="detail-section-label">Tech Stack</div>
           <div className="detail-tags">
             {project.tags.map((tag) => (
-              <span key={tag} className="chip chip-accent">
+              <span key={tag} className={`chip ${tag === "Hackathon" ? "chip-hackathon" : "chip-accent"}`}>
                 {tag}
               </span>
             ))}

@@ -382,6 +382,13 @@ footer {
   vertical-align: middle;
 }
 
+.chip-hackathon {
+  background: rgba(251, 146, 60, 0.15);
+  color: #fb923c;
+  border: 1px solid rgba(251, 146, 60, 0.35);
+  font-weight: 600;
+}
+
 /* ── Modal ── */
 .modal-backdrop {
   position: fixed;

@@ -107,7 +107,7 @@ export default function CoursesSection() {
               <p className="modal-desc">{activeCourse.longDesc}</p>
 
               <div className="modal-section">
-                <div className="modal-section-label">What you&apos;ll learn</div>
+                <div className="modal-section-label">What I&apos;m Learning</div>
                 <ul className="modal-highlights">
                   {activeCourse.highlights.map((h, i) => (
                     <li key={i}>{h}</li>

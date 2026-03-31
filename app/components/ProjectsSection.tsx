@@ -42,7 +42,7 @@ export default function ProjectsSection() {
               <p>{project.shortDesc}</p>
               <div className="card-footer">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="chip chip-accent">
+                  <span key={tag} className={`chip ${tag === "Hackathon" ? "chip-hackathon" : "chip-accent"}`}>
                     {tag}
                   </span>
                 ))}
@@ -128,7 +128,7 @@ export default function ProjectsSection() {
                 <div className="modal-section-label">Tech Stack</div>
                 <div className="modal-tags">
                   {activeProject.tags.map((tag) => (
-                    <span key={tag} className="chip chip-accent">
+                    <span key={tag} className={`chip ${tag === "Hackathon" ? "chip-hackathon" : "chip-accent"}`}>
                       {tag}
                     </span>
                   ))}
