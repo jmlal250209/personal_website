@@ -30,17 +30,23 @@ export const projects: Project[] = [
     id: "housing",
     title: "Student Housing & Roommate Matching Platform",
     shortDesc:
-      "A group project at TCD. Built scalable backend services with Python and AWS DynamoDB supporting real-time user–property matching.",
+      "A TCD Software Engineering group project. Built scalable backend services with Python and AWS DynamoDB supporting real-time user–property matching.",
     longDesc:
-      "A full-stack web platform developed as a team project at Trinity College Dublin to solve the student housing crisis in Dublin. I led backend development, designing and implementing the core data layer on AWS DynamoDB and building RESTful APIs that power the property interest and user matching flows.",
+      "A full-stack web platform built as a Software Engineering group project at Trinity College Dublin. My focus was the backend — designing and building the data layer on AWS DynamoDB, implementing RESTful APIs for property and user interactions, and developing the core matching logic. I also built the messaging system using polling-based retrieval for real-time communication between matched users.",
     tags: ["Python", "AWS DynamoDB", "REST API", "JavaScript", "Flask"],
     links: [],
     highlights: [
       "Designed scalable DynamoDB schema for users, properties, and match states",
       "Built RESTful APIs for property interest tracking and user interactions",
-      "Implemented core matching logic pairing students to compatible listings",
+      "Implemented core matching logic for user–property pairing",
       "Developed polling-based real-time messaging between matched users",
       "Collaborated in an Agile team with frontend, design, and QA roles",
+    ],
+    learnedPoints: [
+      "Designing a NoSQL schema on DynamoDB for a relational-style matching problem",
+      "Building and documenting RESTful APIs consumed by a separate frontend team",
+      "Collaborating across backend, frontend, and design in a structured group project",
+      "Implementing real-time-like features (polling) without a dedicated WebSocket layer",
     ],
     futurePlans: [
       "Push notification system for real-time match and message alerts",
@@ -115,7 +121,6 @@ export const projects: Project[] = [
       "On-device AI co-pilot (Qwen 2.5 via llama.cpp) explains parameters in plain language",
       "Live training metrics streamed to the UI via Server-Sent Events",
       "DICOM support and permutation-based feature selection for medical datasets",
-      "Replaces technical jargon with illustrated parameter cards for non-expert users",
     ],
     screenshots: [
       { src: "/images/projects/medml/Dataset%20Loading.png",     caption: "Step 1 — Load Your Dataset" },
@@ -136,26 +141,27 @@ export const projects: Project[] = [
     gradient: "linear-gradient(135deg, #0d2e1f 0%, #0f172a 100%)",
     learnedIntro: "My first hackathon — went in to learn the process, came out with much more than expected.",
     learnedPoints: [
-      "How ML models are trained and evaluated end-to-end in a real app, not just a notebook",
-      "Deploying a locally-running LLM alongside a backend pipeline and a live UI",
-      "Collaborating fast under tight time constraints — breaking work down and staying unblocked",
-      "Keeping momentum in a small team when there's no time to overthink",
+      "How ML models are trained and evaluated end-to-end in a real application, not just a notebook",
+      "Applying techniques like linear regression and neural networks to real medical datasets",
+      "Building a file export feature that bridges the model training pipeline with the frontend",
+      "Collaborating fast under tight time constraints — breaking work down and staying unblocked in a small team",
     ],
   },
   {
     id: "chatbot",
     title: "AI Chatbot",
     shortDesc:
-      "A RAG-powered chatbot being built as the foundation for multiple AI integrations — portfolio avatar, learning companion, translation agent, and more.",
+      "A personal project building an AI-powered chatbot using the Claude API — designed with a modular architecture to support future AI agent integrations.",
     longDesc:
-      "An AI chatbot built with LangChain and Retrieval-Augmented Generation. The focus right now is getting the core right — a reliable RAG pipeline that can ground responses in real, structured knowledge. Once the foundation is solid, it gets integrated across different surfaces: a portfolio avatar, a learning companion, a translation agent, and whatever comes after that. Build once, extend everywhere.",
-    tags: ["Python", "LangChain", "RAG", "LLMs"],
+      "A personal project building an AI chatbot from the ground up using the Claude API. The focus has been on getting the architecture right: a modular backend that handles message routing and user–AI interaction, a frontend chat interface, and a system structured for extensibility — so features like memory, RAG, and multiple AI agents can be layered in over time. The goal is to build this once as a solid foundation, then integrate it across different surfaces.",
+    tags: ["Claude API", "Python", "RAG", "LLMs"],
     links: [],
     status: "In progress",
     highlights: [
-      "RAG pipeline grounding every response in real, structured knowledge",
-      "Built with LangChain for flexible, composable query handling",
-      "Designed as a reusable foundation — not tied to a single integration",
+      "Built an AI-powered chatbot using the Claude API for real-time conversational interactions",
+      "Designed a modular architecture to support future integration of multiple AI agents and tools",
+      "Implemented frontend chat interface and backend message handling for dynamic user–AI interaction",
+      "Structured the system for extensibility — future features include memory, RAG, and tool use",
     ],
     futurePlans: [
       "Portfolio avatar — integrate into this site as an interactive AI version of me",
