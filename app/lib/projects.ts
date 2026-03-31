@@ -21,6 +21,7 @@ export interface Project {
   learnedIntro?: string;
   learnedPoints?: string[];
   futurePlans?: string[];
+  hideDetailPage?: boolean;
 }
 
 export const projects: Project[] = [
@@ -129,21 +130,26 @@ export const projects: Project[] = [
   },
   {
     id: "chatbot",
-    title: "AI Chatbot — Portfolio Avatar",
+    title: "AI Chatbot",
     shortDesc:
-      "An AI chatbot built with RAG and agentic techniques, designed to act as an interactive AI version of me within this portfolio.",
+      "A RAG-powered chatbot being built as the foundation for multiple AI integrations — portfolio avatar, learning companion, translation agent, and more.",
     longDesc:
-      "An AI-powered chatbot that lives inside this portfolio and acts as an interactive version of me. Built with LangChain, it uses Retrieval-Augmented Generation to answer questions grounded in real facts about my background, projects, and skills. Future extensions include a translation AI agent that bridges language barriers for international visitors, and a learning companion agent that can discuss CS concepts in depth.",
-    tags: ["Python", "LangChain", "RAG", "AI Agents", "LLMs"],
+      "An AI chatbot built with LangChain and Retrieval-Augmented Generation. The focus right now is getting the core right — a reliable RAG pipeline that can ground responses in real, structured knowledge. Once the foundation is solid, it gets integrated across different surfaces: a portfolio avatar, a learning companion, a translation agent, and whatever comes after that. Build once, extend everywhere.",
+    tags: ["Python", "LangChain", "RAG", "LLMs"],
     links: [],
     status: "In progress",
     highlights: [
-      "RAG pipeline grounded in real portfolio data for accurate answers",
-      "Agentic reasoning via LangChain to handle multi-step queries",
-      "Planned: translation agent for multi-language support",
-      "Planned: learning companion agent for CS concept discussion",
+      "RAG pipeline grounding every response in real, structured knowledge",
+      "Built with LangChain for flexible, composable query handling",
+      "Designed as a reusable foundation — not tied to a single integration",
+    ],
+    futurePlans: [
+      "Portfolio avatar — integrate into this site as an interactive AI version of me",
+      "Learning companion — discuss CS concepts and course material in depth",
+      "Translation agent — help international visitors in their own language",
     ],
     gradient: "linear-gradient(135deg, #2d1a00 0%, #0f172a 100%)",
+    hideDetailPage: true,
   },
 ];
 

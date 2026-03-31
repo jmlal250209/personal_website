@@ -65,35 +65,43 @@ export default function ProjectsSection() {
           aria-label={activeProject.title}
         >
           <div className="modal">
-            {/* Clickable banner — navigates to detail page */}
-            <Link
-              href={`/projects/${activeProject.id}`}
-              className="modal-banner"
-              style={{ background: activeProject.gradient }}
-              aria-label={`Open full details for ${activeProject.title}`}
-            >
-              {activeProject.imageSrc ? (
-                <img
-                  src={activeProject.imageSrc}
-                  alt={activeProject.title}
-                  className="modal-banner-img"
-                />
-              ) : (
+            {/* Banner — clickable only if detail page exists */}
+            {activeProject.hideDetailPage ? (
+              <div
+                className="modal-banner"
+                style={{ background: activeProject.gradient }}
+              >
                 <div className="modal-banner-placeholder">
                   <span className="modal-banner-initial">
-                    {activeProject.title
-                      .split(" ")
-                      .slice(0, 2)
-                      .map((w) => w[0])
-                      .join("")}
+                    {activeProject.title.split(" ").slice(0, 2).map((w) => w[0]).join("")}
                   </span>
                 </div>
-              )}
-              {/* Hover overlay */}
-              <div className="modal-banner-overlay">
-                <span className="modal-banner-cta">View Full Details →</span>
               </div>
-            </Link>
+            ) : (
+              <Link
+                href={`/projects/${activeProject.id}`}
+                className="modal-banner"
+                style={{ background: activeProject.gradient }}
+                aria-label={`Open full details for ${activeProject.title}`}
+              >
+                {activeProject.imageSrc ? (
+                  <img
+                    src={activeProject.imageSrc}
+                    alt={activeProject.title}
+                    className="modal-banner-img"
+                  />
+                ) : (
+                  <div className="modal-banner-placeholder">
+                    <span className="modal-banner-initial">
+                      {activeProject.title.split(" ").slice(0, 2).map((w) => w[0]).join("")}
+                    </span>
+                  </div>
+                )}
+                <div className="modal-banner-overlay">
+                  <span className="modal-banner-cta">View Full Details →</span>
+                </div>
+              </Link>
+            )}
 
             {/* Close button */}
             <button

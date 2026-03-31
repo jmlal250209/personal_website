@@ -4,7 +4,7 @@ import { getProjectById, projects } from "@/app/lib/projects";
 import ScreenshotsGallery from "@/app/components/ScreenshotsGallery";
 
 export async function generateStaticParams() {
-  return projects.map((p) => ({ id: p.id }));
+  return projects.filter((p) => !p.hideDetailPage).map((p) => ({ id: p.id }));
 }
 
 export async function generateMetadata({
