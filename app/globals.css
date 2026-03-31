@@ -738,6 +738,12 @@ footer {
   gap: 10px;
 }
 
+.detail-btn-disabled {
+  opacity: 0.45;
+  cursor: default;
+  pointer-events: none;
+}
+
 .detail-screenshot-placeholder {
   min-height: 220px;
   border: 2px dashed var(--border);

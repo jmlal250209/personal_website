@@ -1,4 +1,5 @@
 import ProjectsSection from "./components/ProjectsSection";
+import CoursesSection from "./components/CoursesSection";
 
 export default function Home() {
   return (
@@ -60,41 +61,7 @@ export default function Home() {
         <section id="learning">
           <div className="section-label">Currently Learning</div>
           <h2>Courses</h2>
-          <div className="cards">
-            <div className="card">
-              <h3>IBM RAG and Agentic AI</h3>
-              <p>
-                Professional certificate covering retrieval-augmented generation, agentic workflows,
-                and building AI systems that can reason, plan, and act autonomously.
-              </p>
-              <div className="card-footer">
-                <span className="chip chip-accent">RAG</span>
-                <span className="chip chip-accent">LangChain</span>
-                <span className="chip chip-accent">AI Agents</span>
-                <span className="chip chip-accent">LLMs</span>
-                <a href="https://www.coursera.org/professional-certificates/ibm-rag-and-agentic-ai" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '4px 12px', fontSize: '13px' }}>
-                  Coursera →
-                </a>
-              </div>
-            </div>
-            <div className="card">
-              <h3>IBM Full Stack Cloud Developer</h3>
-              <p>
-                Professional certificate covering front-end, back-end, cloud deployment,
-                microservices, containers, and CI/CD — end-to-end full stack development.
-              </p>
-              <div className="card-footer">
-                <span className="chip chip-accent">React</span>
-                <span className="chip chip-accent">Node.js</span>
-                <span className="chip chip-accent">Docker</span>
-                <span className="chip chip-accent">Kubernetes</span>
-                <span className="chip chip-accent">Cloud</span>
-                <a href="https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ padding: '4px 12px', fontSize: '13px' }}>
-                  Coursera →
-                </a>
-              </div>
-            </div>
-          </div>
+          <CoursesSection />
         </section>
 
         {/* Projects */}

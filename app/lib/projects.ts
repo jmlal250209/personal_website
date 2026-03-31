@@ -49,7 +49,7 @@ export const projects: Project[] = [
       {
         label: "Source",
         url: "https://github.com/JMLal250209/Personal_website",
-        primary: false,
+        primary: true,
       },
     ],
     highlights: [
