@@ -121,18 +121,6 @@ export default async function ProjectDetailPage({
           </section>
         )}
 
-        {/* Future Plans */}
-        {project.futurePlans && (
-          <section className="detail-section">
-            <div className="detail-section-label">What&apos;s Next</div>
-            <ul className="detail-highlights">
-              {project.futurePlans.map((p, i) => (
-                <li key={i}>{p}</li>
-              ))}
-            </ul>
-          </section>
-        )}
-
         {/* Tech Stack */}
         <section className="detail-section">
           <div className="detail-section-label">Tech Stack</div>
@@ -169,6 +157,18 @@ export default async function ProjectDetailPage({
         </section>
 
         {/* Links */}
+        {/* What's Next */}
+        {project.futurePlans && (
+          <section className="detail-section">
+            <div className="detail-section-label">What&apos;s Next</div>
+            <ul className="detail-highlights">
+              {project.futurePlans.map((p, i) => (
+                <li key={i}>{p}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {project.links.length > 0 && (
           <section className="detail-section">
             <div className="detail-section-label">Links</div>

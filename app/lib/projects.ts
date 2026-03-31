@@ -42,6 +42,12 @@ export const projects: Project[] = [
       "Developed polling-based real-time messaging between matched users",
       "Collaborated in an Agile team with frontend, design, and QA roles",
     ],
+    futurePlans: [
+      "Push notification system for real-time match and message alerts",
+      "Map-based property search so students can filter by proximity to campus",
+      "Verified listing system to reduce fraudulent or inaccurate posts",
+      "Rating and review system for landlords and tenants after tenancy ends",
+    ],
     gradient: "linear-gradient(135deg, #0f2d5e 0%, #1a1035 100%)",
   },
   {
@@ -121,6 +127,12 @@ export const projects: Project[] = [
       { src: "/images/projects/medml/Model%20Gallery.png",       caption: "Model Gallery" },
     ],
     demoUrl: "https://www.youtube.com/embed/fWWPmobwLvE",
+    futurePlans: [
+      "DICOM-native image pipeline — real CNN training on medical imaging without requiring format conversion",
+      "Federated averaging — multiple sites train local models; only weight deltas are shared, never patient data",
+      "SHAP explanations — post-training feature attribution so clinicians can understand why the model made a prediction",
+      "ONNX export — deploy trained models to edge devices and clinical decision-support systems",
+    ],
     gradient: "linear-gradient(135deg, #0d2e1f 0%, #0f172a 100%)",
     learnedIntro: "My first hackathon — went in to learn the process, came out with much more than expected.",
     learnedPoints: [
