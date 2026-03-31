@@ -17,8 +17,10 @@ export interface Project {
   imageSrc?: string;
   screenshots?: { src: string; caption: string }[];
   demoUrl?: string;
+  overviewLabel?: string;
   learnedIntro?: string;
   learnedPoints?: string[];
+  futurePlans?: string[];
 }
 
 export const projects: Project[] = [
@@ -46,7 +48,7 @@ export const projects: Project[] = [
     shortDesc:
       "My personal website built with Next.js, deployed on Vercel to showcase my work, skills, and future projects.",
     longDesc:
-      "This site — built from scratch with Next.js 15 and TypeScript, no UI libraries. The design is a custom dark theme with CSS variables, smooth hover animations, and a responsive layout using clamp() for fluid typography. Deployed on Vercel with automatic CI/CD from GitHub.",
+      "This site started as a simple need: I wanted somewhere to put my projects. It turned into a project in itself — and intentionally so. Built with Next.js and TypeScript, no UI libraries, just CSS variables and plain React. I used AI-assisted development to move fast, but made sure to understand every design decision along the way. The portfolio grows as I grow — new features get added as I learn them, not before.",
     tags: ["Next.js", "TypeScript", "CSS", "Vercel"],
     links: [
       {
@@ -56,12 +58,27 @@ export const projects: Project[] = [
       },
     ],
     highlights: [
-      "Custom dark UI with CSS variables and glassmorphism nav",
-      "Fluid typography and responsive layout — no Tailwind, no frameworks",
-      "Gradient text, pulse animations, and hover lift effects",
-      "Deployed with Vercel, auto-deploys on every push to main",
+      "Custom dark UI built entirely with CSS variables — no Tailwind, no component libraries",
+      "Project modals with clickable banners that navigate to dedicated detail pages",
+      "Screenshot lightbox with keyboard navigation (← → Escape)",
+      "Fully static — pre-rendered at build time via Next.js generateStaticParams",
+      "Auto-deploys to Vercel on every push to main",
     ],
+    overviewLabel: "How I Built This",
     gradient: "linear-gradient(135deg, #1a0a3e 0%, #0f172a 100%)",
+    learnedIntro: "This portfolio is a living project — here's what building it has taught me so far.",
+    learnedPoints: [
+      "How to structure a Next.js App Router project cleanly from scratch",
+      "Using CSS variables and clamp() for a fully responsive design without a framework",
+      "Thinking about UX interactions — modals, lightboxes, hover states, mobile touch behaviour",
+      "AI-assisted development: moving fast while staying in control of every decision",
+    ],
+    futurePlans: [
+      "Integrate an AI chatbot powered by RAG and agentic AI — a version of me that visitors can talk to",
+      "The chatbot will answer questions about my background, projects, and skills grounded in real data",
+      "Add light / dark / system theme toggle",
+      "Continue adding projects and course reflections as I learn and build",
+    ],
   },
   {
     id: "medml",

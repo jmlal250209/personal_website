@@ -78,7 +78,7 @@ export default async function ProjectDetailPage({
 
         {/* Overview */}
         <section className="detail-section">
-          <div className="detail-section-label">Overview</div>
+          <div className="detail-section-label">{project.overviewLabel ?? "Overview"}</div>
           <p className="detail-text">{project.longDesc}</p>
         </section>
 
@@ -108,16 +108,24 @@ export default async function ProjectDetailPage({
         )}
 
         {/* Screenshots */}
-        <section className="detail-section">
-          <div className="detail-section-label">Screenshots</div>
-          {project.screenshots && project.screenshots.length > 0 ? (
+        {project.screenshots && project.screenshots.length > 0 && (
+          <section className="detail-section">
+            <div className="detail-section-label">Screenshots</div>
             <ScreenshotsGallery screenshots={project.screenshots} />
-          ) : (
-            <div className="detail-screenshot-placeholder">
-              Screenshots coming soon
-            </div>
-          )}
-        </section>
+          </section>
+        )}
+
+        {/* Future Plans */}
+        {project.futurePlans && (
+          <section className="detail-section">
+            <div className="detail-section-label">What&apos;s Next</div>
+            <ul className="detail-highlights">
+              {project.futurePlans.map((p, i) => (
+                <li key={i}>{p}</li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* Tech Stack */}
         <section className="detail-section">
