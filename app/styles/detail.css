@@ -40,6 +40,10 @@
 }
 
 .detail-back {
+  position: fixed;
+  top: 72px;
+  left: 20px;
+  z-index: 50;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -47,12 +51,11 @@
   font-weight: 500;
   color: var(--text-muted);
   text-decoration: none;
-  margin-bottom: 14px;
   padding: 6px 12px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(10, 15, 30, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   transition: background 0.2s, color 0.2s;
 }
 
