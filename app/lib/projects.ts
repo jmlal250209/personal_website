@@ -31,7 +31,7 @@ export const projects: Project[] = [
       "What it takes to go from design to a working product — bridging requirements, backend logic, and a live frontend in a team setting",
       "How REST APIs work end-to-end — designing endpoints, handling requests, and making sure the frontend and backend speak the same language",
       "How to implement user authentication using AWS services — and why offloading auth to a managed service is often the right call",
-      "How to structure and store user data in DynamoDB — including the trade-offs of a NoSQL schema when your data has relational qualities",
+      "How to structure and store varied data in DynamoDB — user profiles, personality and lifestyle preferences, and property listings, each with different access patterns",
       "How a messaging system works under the hood — storing messages, retrieving them in order, and delivering them to the right users",
       "How to test backend APIs with Postman and verify data integrity directly in DynamoDB — making debugging a systematic process rather than guesswork",
       "How to write tests for backend logic — and why testing early catches assumptions that seem obvious but aren't",
