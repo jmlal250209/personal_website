@@ -1,0 +1,311 @@
+/* ── Layout ── */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 120px 24px 80px;
+}
+
+/* ── Hero ── */
+.hero {
+  padding: 60px 0 80px;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-glow);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #a5b4fc;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.hero-tag::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--green);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--green);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+h1 {
+  font-size: clamp(40px, 6vw, 60px);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin: 0 0 20px;
+  background: linear-gradient(135deg, #e2e8f0 30%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-desc {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 0 36px;
+  line-height: 1.75;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.btn-primary:hover {
+  background: #5558e8;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+  text-decoration: none;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--border);
+}
+
+.btn-outline:hover {
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-color: #334155;
+  text-decoration: none;
+}
+
+/* ── Sections ── */
+section {
+  padding: 60px 0;
+  border-top: 1px solid var(--border);
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 0 24px;
+  color: var(--text);
+}
+
+p {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: 0 0 16px;
+}
+
+/* ── Cards ── */
+.cards {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px 28px;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--accent-glow), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.card:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+.card p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: inline-block;
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid var(--border);
+}
+
+.chip-accent {
+  background: rgba(99, 102, 241, 0.12);
+  color: #a5b4fc;
+  border-color: rgba(99, 102, 241, 0.25);
+}
+
+/* ── Skills ── */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.skill-badge:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  color: var(--text);
+  background: var(--bg-elevated);
+}
+
+.skill-badge .icon {
+  font-size: 16px;
+}
+
+.skills-category {
+  margin-bottom: 28px;
+}
+
+.skills-category h3 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0 0 12px;
+}
+
+/* ── Footer ── */
+footer {
+  padding: 40px 24px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+/* ── SVG Icons ── */
+.icon-svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* ── Clickable card ── */
+.card-clickable {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  background: var(--bg-card);
+}
+
+.card-clickable .card-inner {
+  width: 100%;
+}
+
+.chip-outline {
+  background: transparent;
+  color: var(--text-faint);
+  border: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.card-clickable:hover .chip-outline {
+  color: var(--accent);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+.chip-status {
+  background: rgba(251, 191, 36, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  margin-left: 10px;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.chip-hackathon {
+  background: rgba(251, 146, 60, 0.15);
+  color: #fb923c;
+  border: 1px solid rgba(251, 146, 60, 0.35);
+  font-weight: 600;
+}

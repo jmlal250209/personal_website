@@ -1,29 +1,5 @@
-export interface ProjectLink {
-  label: string;
-  url: string;
-  primary?: boolean;
-}
-
-export interface Project {
-  id: string;
-  title: string;
-  shortDesc: string;
-  longDesc: string;
-  tags: string[];
-  links: ProjectLink[];
-  status?: string;
-  highlights: string[];
-  gradient: string;
-  imageSrc?: string;
-  screenshots?: { src: string; caption: string }[];
-  demoUrl?: string;
-  overviewLabel?: string;
-  learnedIntro?: string;
-  learnedPoints?: string[];
-  futurePlans?: string[];
-  hideDetailPage?: boolean;
-  hideScreenshots?: boolean;
-}
+export type { Project, ProjectLink } from "@/app/types";
+import type { Project } from "@/app/types";
 
 export const projects: Project[] = [
   {

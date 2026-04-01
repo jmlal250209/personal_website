@@ -1,25 +1,5 @@
-export interface CourseLink {
-  label: string;
-  url: string;
-  primary?: boolean;
-}
-
-export interface Course {
-  id: string;
-  title: string;
-  provider: string;
-  shortDesc: string;
-  longDesc: string;
-  tags: string[];
-  courseraUrl: string;
-  notesUrl?: string;
-  status: "In progress" | "Completed";
-  highlights: string[];
-  gradient: string;
-  imageSrc?: string;
-  learnedIntro?: string;
-  learnedPoints?: string[];
-}
+export type { Course, CourseLink } from "@/app/types";
+import type { Course } from "@/app/types";
 
 export const courses: Course[] = [
   {

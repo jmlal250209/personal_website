@@ -63,12 +63,18 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ```
 .
 ├── app/
+│   ├── components/
+│   ├── courses/[id]/
+│   ├── lib/
+│   ├── projects/[id]/
+│   ├── styles/
+│   ├── types/
 │   ├── globals.css
 │   ├── icon.svg
 │   ├── layout.tsx
-│   ├── page.tsx
-│   └── images/
+│   └── page.tsx
 ├── public/
+│   └── images/
 ├── next.config.ts
 ├── tsconfig.json
 └── package.json

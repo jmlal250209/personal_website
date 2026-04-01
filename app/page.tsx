@@ -1,5 +1,5 @@
-import ProjectsSection from "./components/ProjectsSection";
-import CoursesSection from "./components/CoursesSection";
+import ProjectsSection from "@/app/components/ProjectsSection";
+import CoursesSection from "@/app/components/CoursesSection";
 
 export default function Home() {
   return (
