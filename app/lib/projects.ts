@@ -28,11 +28,13 @@ export const projects: Project[] = [
       { src: "/images/projects/housing/Green%20Computing.png",        caption: "Green Computing Initiative" },
     ],
     learnedPoints: [
-      "How to model relational-style data in a NoSQL database — DynamoDB requires thinking about access patterns upfront, not schema first",
-      "Why API contracts matter in cross-team work — when a separate frontend team depends on what you define, ambiguity has a real cost",
-      "How to break a matching problem into a data structure and scoring algorithm that can be reasoned about and tested independently",
-      "The trade-offs of polling vs. WebSockets for real-time messaging — and when a simpler solution is the right engineering call",
-      "What Agile collaboration actually looks like in practice — coordinating across backend, frontend, and design under real time pressure",
+      "What it takes to go from design to a working product — bridging requirements, backend logic, and a live frontend in a team setting",
+      "How REST APIs work end-to-end — designing endpoints, handling requests, and making sure the frontend and backend speak the same language",
+      "How to implement user authentication using AWS services — and why offloading auth to a managed service is often the right call",
+      "How to structure and store user data in DynamoDB — including the trade-offs of a NoSQL schema when your data has relational qualities",
+      "How a messaging system works under the hood — storing messages, retrieving them in order, and delivering them to the right users",
+      "How to test backend APIs with Postman and verify data integrity directly in DynamoDB — making debugging a systematic process rather than guesswork",
+      "How to write tests for backend logic — and why testing early catches assumptions that seem obvious but aren't",
     ],
     futurePlans: [
       "Push notification system for real-time match and message alerts",
