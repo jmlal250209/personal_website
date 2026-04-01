@@ -23,17 +23,19 @@ The site is built with Next.js and deployed via Vercel.
 - Next.js 16
 - React 19
 - TypeScript
-- CSS (global styles)
+- CSS (modular — split by concern)
 - Vercel (Deployment)
 
 ---
 
 ## ✨ Features
 
-- Clean and minimal portfolio layout
-- Project showcase section
-- Personal introduction
-- Fast deployment via Vercel
+- Clean and minimal dark UI built with CSS variables
+- Project and course cards with modal previews
+- Dedicated detail pages for each project and course
+- Screenshot gallery with full-screen lightbox and keyboard navigation (← → Escape)
+- Fully static — pre-rendered at build time via Next.js
+- Auto-deploys to Vercel on every push to main
 - Responsive design (ongoing improvements)
 
 ---

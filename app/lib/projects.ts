@@ -6,9 +6,9 @@ export const projects: Project[] = [
     id: "housing",
     title: "Student Housing & Roommate Matching Platform",
     shortDesc:
-      "A TCD Software Engineering group project. Built scalable backend services with Python and AWS DynamoDB supporting real-time user–property matching.",
+      "A full-stack web platform built as a Software Engineering group project at TCD. Matches students with compatible roommates based on personality and lifestyle preferences, with property listings and real-time messaging.",
     longDesc:
-      "A full-stack web platform built as a Software Engineering group project at Trinity College Dublin. My focus was the backend — designing and building the data layer on AWS DynamoDB, implementing RESTful APIs for property and user interactions, and developing the core matching logic. I also built the messaging system using polling-based retrieval for real-time communication between matched users.",
+      "A full-stack web platform built as a Software Engineering group project at Trinity College Dublin. Students complete a personality and lifestyle questionnaire — covering habits, schedules, and living preferences — and a matching algorithm uses their responses to find compatible roommates. The platform also lets students browse property listings and express interest, with real-time messaging enabling matched users to connect directly. My focus was the backend: designing the DynamoDB data layer, implementing the matching logic and RESTful APIs, and building the messaging system.",
     tags: ["Python", "AWS DynamoDB", "REST API", "JavaScript", "Flask"],
     links: [],
     highlights: [
