@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { projects, Project } from "@/app/lib/projects";
+import { projects, Project, formatProjectDate } from "@/app/lib/projects";
 
 export default function ProjectsSection() {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
@@ -33,6 +33,9 @@ export default function ProjectsSection() {
             aria-label={`View details for ${project.title}`}
           >
             <div className="card-inner">
+              {project.date && !project.status && (
+                <span className="chip chip-date">{formatProjectDate(project.date)}</span>
+              )}
               <h3>
                 {project.title}
                 {project.status && (

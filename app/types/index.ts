@@ -7,6 +7,7 @@ export interface ProjectLink {
 export interface Project {
   id: string;
   title: string;
+  date?: string; // "YYYY-MM-DD", completion date
   shortDesc: string;
   longDesc: string;
   tags: string[];

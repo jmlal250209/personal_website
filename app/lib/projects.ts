@@ -3,89 +3,9 @@ import type { Project } from "@/app/types";
 
 export const projects: Project[] = [
   {
-    id: "housing",
-    title: "Student Housing & Roommate Matching Platform",
-    shortDesc:
-      "A full-stack web platform built as a Software Engineering group project at TCD. Matches students with compatible roommates based on personality and lifestyle preferences, with property listings and real-time messaging.",
-    longDesc:
-      "A full-stack web platform built as a Software Engineering group project at Trinity College Dublin. Students complete a personality and lifestyle questionnaire — covering habits, schedules, and living preferences — and a matching algorithm uses their responses to find compatible roommates. The platform also lets students browse property listings and express interest, with real-time messaging enabling matched users to connect directly. My focus was the backend: designing the DynamoDB data layer, implementing the matching logic and RESTful APIs, and building the messaging system.",
-    tags: ["Python", "AWS DynamoDB", "REST API", "JavaScript", "Flask"],
-    links: [],
-    highlights: [
-      "Designed scalable DynamoDB schema for users, properties, and match states",
-      "Built RESTful APIs for property interest tracking and user interactions",
-      "Implemented core matching logic for user–property pairing",
-      "Developed polling-based real-time messaging between matched users",
-      "Collaborated in an Agile team with frontend, design, and QA roles",
-    ],
-    screenshots: [
-      { src: "/images/projects/housing/Login%20page.png",             caption: "Sign In" },
-      { src: "/images/projects/housing/Housing%20Requirements.png",   caption: "Step 1 — Housing Requirements" },
-      { src: "/images/projects/housing/About%20You.png",              caption: "Step 2 — Personality & Lifestyle Profile" },
-      { src: "/images/projects/housing/House%20Lists.png",            caption: "Browse Student Homes" },
-      { src: "/images/projects/housing/Housing%20Details.png",        caption: "Property Details & Roommate Matches" },
-      { src: "/images/projects/housing/Chat%20Page.png",              caption: "Matched Group Chat" },
-      { src: "/images/projects/housing/Green%20Computing.png",        caption: "Green Computing Initiative" },
-    ],
-    learnedPoints: [
-      "What it takes to go from design to a working product — bridging requirements, backend logic, and a live frontend in a team setting",
-      "How REST APIs work end-to-end — designing endpoints, handling requests, and making sure the frontend and backend speak the same language",
-      "How to implement user authentication using AWS services — and why offloading auth to a managed service is often the right call",
-      "How to structure and store varied data in DynamoDB — user profiles, personality and lifestyle preferences, and property listings, each with different access patterns",
-      "How a messaging system works under the hood — storing messages, retrieving them in order, and delivering them to the right users",
-      "How to test backend APIs with Postman and verify data integrity directly in DynamoDB — making debugging a systematic process rather than guesswork",
-      "How to write tests for backend logic — and why testing early catches assumptions that seem obvious but aren't",
-    ],
-    futurePlans: [
-      "Push notification system for real-time match and message alerts",
-      "Map-based property search so students can filter by proximity to campus",
-      "Verified listing system to reduce fraudulent or inaccurate posts",
-      "Rating and review system for landlords and tenants after tenancy ends",
-    ],
-    gradient: "linear-gradient(135deg, #0f2d5e 0%, #1a1035 100%)",
-  },
-  {
-    id: "portfolio",
-    title: "Portfolio Website",
-    shortDesc:
-      "My personal website built with Next.js, deployed on Vercel to showcase my work, skills, and future projects.",
-    longDesc:
-      "This site started as a simple need: I wanted somewhere to put my projects. It turned into a project in itself — and intentionally so. Built with Next.js and TypeScript, no UI libraries, just CSS variables and plain React. I used AI-assisted development to move fast, but made sure to understand every design decision along the way. The portfolio grows as I grow — new features get added as I learn them, not before.",
-    tags: ["Next.js", "TypeScript", "CSS", "Vercel"],
-    links: [
-      {
-        label: "Source",
-        url: "https://github.com/JMLal250209/Personal_website",
-        primary: true,
-      },
-    ],
-    highlights: [
-      "Custom dark UI built entirely with CSS variables — no Tailwind, no component libraries",
-      "Project modals with clickable banners that navigate to dedicated detail pages",
-      "Screenshot lightbox with keyboard navigation (← → Escape)",
-      "Fully static — pre-rendered at build time via Next.js generateStaticParams",
-      "Auto-deploys to Vercel on every push to main",
-    ],
-    overviewLabel: "How I Built This",
-    hideScreenshots: true,
-    gradient: "linear-gradient(135deg, #1a0a3e 0%, #0f172a 100%)",
-    learnedIntro: "This portfolio is a living project — here's what building it has taught me so far.",
-    learnedPoints: [
-      "How to structure a Next.js App Router project cleanly from scratch",
-      "Using CSS variables and clamp() for a fully responsive design without a framework",
-      "Thinking about UX interactions — modals, lightboxes, hover states, mobile touch behaviour",
-      "AI-assisted development: moving fast while staying in control of every decision",
-    ],
-    futurePlans: [
-      "Integrate an AI chatbot powered by RAG and agentic AI — a version of me that visitors can talk to",
-      "The chatbot will answer questions about my background, projects, and skills grounded in real data",
-      "Add light / dark / system theme toggle",
-      "Continue adding projects and course reflections as I learn and build",
-    ],
-  },
-  {
     id: "medml",
     title: "MedML Forge",
+    date: "2026-03-28",
     shortDesc:
       "A privacy-preserving ML pipeline for clinical researchers. Trains models on sensitive patient data entirely locally — no cloud, no data leakage.",
     longDesc:
@@ -136,6 +56,89 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "housing",
+    title: "Student Housing & Roommate Matching Platform",
+    date: "2026-03-26",
+    shortDesc:
+      "A full-stack web platform built as a Software Engineering group project at TCD. Matches students with compatible roommates based on personality and lifestyle preferences, with property listings and real-time messaging.",
+    longDesc:
+      "A full-stack web platform built as a Software Engineering group project at Trinity College Dublin. Students complete a personality and lifestyle questionnaire — covering habits, schedules, and living preferences — and a matching algorithm uses their responses to find compatible roommates. The platform also lets students browse property listings and express interest, with real-time messaging enabling matched users to connect directly. My focus was the backend: designing the DynamoDB data layer, implementing the matching logic and RESTful APIs, and building the messaging system.",
+    tags: ["Python", "AWS DynamoDB", "REST API", "JavaScript", "Flask"],
+    links: [],
+    highlights: [
+      "Designed scalable DynamoDB schema for users, properties, and match states",
+      "Built RESTful APIs for property interest tracking and user interactions",
+      "Implemented core matching logic for user–property pairing",
+      "Developed polling-based real-time messaging between matched users",
+      "Collaborated in an Agile team with frontend, design, and QA roles",
+    ],
+    screenshots: [
+      { src: "/images/projects/housing/Login%20page.png",             caption: "Sign In" },
+      { src: "/images/projects/housing/Housing%20Requirements.png",   caption: "Step 1 — Housing Requirements" },
+      { src: "/images/projects/housing/About%20You.png",              caption: "Step 2 — Personality & Lifestyle Profile" },
+      { src: "/images/projects/housing/House%20Lists.png",            caption: "Browse Student Homes" },
+      { src: "/images/projects/housing/Housing%20Details.png",        caption: "Property Details & Roommate Matches" },
+      { src: "/images/projects/housing/Chat%20Page.png",              caption: "Matched Group Chat" },
+      { src: "/images/projects/housing/Green%20Computing.png",        caption: "Green Computing Initiative" },
+    ],
+    learnedPoints: [
+      "What it takes to go from design to a working product — bridging requirements, backend logic, and a live frontend in a team setting",
+      "How REST APIs work end-to-end — designing endpoints, handling requests, and making sure the frontend and backend speak the same language",
+      "How to implement user authentication using AWS services — and why offloading auth to a managed service is often the right call",
+      "How to structure and store varied data in DynamoDB — user profiles, personality and lifestyle preferences, and property listings, each with different access patterns",
+      "How a messaging system works under the hood — storing messages, retrieving them in order, and delivering them to the right users",
+      "How to test backend APIs with Postman and verify data integrity directly in DynamoDB — making debugging a systematic process rather than guesswork",
+      "How to write tests for backend logic — and why testing early catches assumptions that seem obvious but aren't",
+    ],
+    futurePlans: [
+      "Push notification system for real-time match and message alerts",
+      "Map-based property search so students can filter by proximity to campus",
+      "Verified listing system to reduce fraudulent or inaccurate posts",
+      "Rating and review system for landlords and tenants after tenancy ends",
+    ],
+    gradient: "linear-gradient(135deg, #0f2d5e 0%, #1a1035 100%)",
+  },
+  {
+    id: "portfolio",
+    title: "Portfolio Website",
+    date: "2026-03-12",
+    shortDesc:
+      "My personal website built with Next.js, deployed on Vercel to showcase my work, skills, and future projects.",
+    longDesc:
+      "This site started as a simple need: I wanted somewhere to put my projects. It turned into a project in itself — and intentionally so. Built with Next.js and TypeScript, no UI libraries, just CSS variables and plain React. I used AI-assisted development to move fast, but made sure to understand every design decision along the way. The portfolio grows as I grow — new features get added as I learn them, not before.",
+    tags: ["Next.js", "TypeScript", "CSS", "Vercel"],
+    links: [
+      {
+        label: "Source",
+        url: "https://github.com/JMLal250209/Personal_website",
+        primary: true,
+      },
+    ],
+    highlights: [
+      "Custom dark UI built entirely with CSS variables — no Tailwind, no component libraries",
+      "Project modals with clickable banners that navigate to dedicated detail pages",
+      "Screenshot lightbox with keyboard navigation (← → Escape)",
+      "Fully static — pre-rendered at build time via Next.js generateStaticParams",
+      "Auto-deploys to Vercel on every push to main",
+    ],
+    overviewLabel: "How I Built This",
+    hideScreenshots: true,
+    gradient: "linear-gradient(135deg, #1a0a3e 0%, #0f172a 100%)",
+    learnedIntro: "This portfolio is a living project — here's what building it has taught me so far.",
+    learnedPoints: [
+      "How to structure a Next.js App Router project cleanly from scratch",
+      "Using CSS variables and clamp() for a fully responsive design without a framework",
+      "Thinking about UX interactions — modals, lightboxes, hover states, mobile touch behaviour",
+      "AI-assisted development: moving fast while staying in control of every decision",
+    ],
+    futurePlans: [
+      "Integrate an AI chatbot powered by RAG and agentic AI — a version of me that visitors can talk to",
+      "The chatbot will answer questions about my background, projects, and skills grounded in real data",
+      "Add light / dark / system theme toggle",
+      "Continue adding projects and course reflections as I learn and build",
+    ],
+  },
+  {
     id: "chatbot",
     title: "AI Chatbot",
     shortDesc:
@@ -169,4 +172,13 @@ export const projects: Project[] = [
 
 export function getProjectById(id: string): Project | undefined {
   return projects.find((p) => p.id === id);
+}
+
+export function formatProjectDate(date: string): string {
+  const [year, month, day] = date.split("-").map(Number);
+  return new Date(year, month - 1, day).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
 }

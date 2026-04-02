@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getProjectById, projects } from "@/app/lib/projects";
+import { getProjectById, projects, formatProjectDate } from "@/app/lib/projects";
 import ScreenshotsGallery from "@/app/components/ScreenshotsGallery";
 
 export async function generateStaticParams() {
@@ -68,9 +68,14 @@ export default async function ProjectDetailPage({
             ← Back to projects
           </Link>
           <h1 className="detail-hero-title">{project.title}</h1>
-          {project.status && (
-            <span className="chip chip-status">{project.status}</span>
-          )}
+          <div className="detail-hero-meta">
+            {project.date && !project.status && (
+              <span className="detail-date">{formatProjectDate(project.date)}</span>
+            )}
+            {project.status && (
+              <span className="chip chip-status">{project.status}</span>
+            )}
+          </div>
         </div>
       </div>
 
