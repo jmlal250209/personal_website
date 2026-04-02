@@ -1,7 +1,7 @@
-export type { Project, ProjectLink } from "@/app/types";
 import type { Project } from "@/app/types";
+export type { Project, ProjectLink } from "@/app/types";
 
-export const projects: Project[] = [
+const _projects: Project[] = [
   {
     id: "medml",
     title: "MedML Forge",
@@ -12,16 +12,8 @@ export const projects: Project[] = [
       "MedML Forge is a hackathon project built to let clinicians and medical professionals train ML models directly on their own machines — no coding expertise required, no data ever leaving the device. Privacy is guaranteed by architecture, not just policy. The app guides users through a seven-stage workflow (scan, preview, cleanup, configure, train, evaluate, gallery) with an on-device AI co-pilot powered by Qwen 2.5 via llama.cpp that explains ML concepts in plain language and grounds its suggestions in the user's actual metrics.",
     tags: ["React", "Python", "PyTorch", "Flask", "LLM", "llama.cpp", "Hackathon"],
     links: [
-      {
-        label: "GitHub",
-        url: "https://github.com/christofilojohn/medml",
-        primary: true,
-      },
-      {
-        label: "Devpost",
-        url: "https://devpost.com/software/medml",
-        primary: false,
-      },
+      { label: "GitHub", url: "https://github.com/christofilojohn/medml", primary: true },
+      { label: "Devpost", url: "https://devpost.com/software/medml", primary: false },
     ],
     highlights: [
       "Fully local pipeline — patient data never leaves the device",
@@ -31,22 +23,15 @@ export const projects: Project[] = [
       "DICOM support and permutation-based feature selection for medical datasets",
     ],
     screenshots: [
-      { src: "/images/projects/medml/Dataset%20Loading.png",     caption: "Step 1 — Load Your Dataset" },
-      { src: "/images/projects/medml/Dataset%20Overview.png",    caption: "Step 2 — Dataset Preview" },
-      { src: "/images/projects/medml/Dataset%20Cleanup.png",     caption: "Step 3 — Data Cleanup" },
+      { src: "/images/projects/medml/Dataset%20Loading.png",       caption: "Step 1 — Load Your Dataset" },
+      { src: "/images/projects/medml/Dataset%20Overview.png",      caption: "Step 2 — Dataset Preview" },
+      { src: "/images/projects/medml/Dataset%20Cleanup.png",       caption: "Step 3 — Data Cleanup" },
       { src: "/images/projects/medml/Parameter%20Calibration.png", caption: "Step 4 — Calibrate Parameters" },
-      { src: "/images/projects/medml/Feature%20Selection.png",   caption: "Step 4 — Feature Selection" },
-      { src: "/images/projects/medml/Model%20Evaluation.png",    caption: "Step 5 — Evaluation Results" },
-      { src: "/images/projects/medml/Model%20Gallery.png",       caption: "Model Gallery" },
+      { src: "/images/projects/medml/Feature%20Selection.png",     caption: "Step 4 — Feature Selection" },
+      { src: "/images/projects/medml/Model%20Evaluation.png",      caption: "Step 5 — Evaluation Results" },
+      { src: "/images/projects/medml/Model%20Gallery.png",         caption: "Model Gallery" },
     ],
     demoUrl: "https://www.youtube.com/embed/fWWPmobwLvE",
-    futurePlans: [
-      "DICOM-native image pipeline — real CNN training on medical imaging without requiring format conversion",
-      "Federated averaging — multiple sites train local models; only weight deltas are shared, never patient data",
-      "SHAP explanations — post-training feature attribution so clinicians can understand why the model made a prediction",
-      "ONNX export — deploy trained models to edge devices and clinical decision-support systems",
-    ],
-    gradient: "linear-gradient(135deg, #0d2e1f 0%, #0f172a 100%)",
     learnedIntro: "My first hackathon — went in to learn the process, came out with much more than expected.",
     learnedPoints: [
       "How ML models are trained and evaluated end-to-end in a real application, not just a notebook",
@@ -54,6 +39,13 @@ export const projects: Project[] = [
       "Building a file export feature that bridges the model training pipeline with the frontend",
       "Collaborating fast under tight time constraints — breaking work down and staying unblocked in a small team",
     ],
+    futurePlans: [
+      "DICOM-native image pipeline — real CNN training on medical imaging without requiring format conversion",
+      "Federated averaging — multiple sites train local models; only weight deltas are shared, never patient data",
+      "SHAP explanations — post-training feature attribution so clinicians can understand why the model made a prediction",
+      "ONNX export — deploy trained models to edge devices and clinical decision-support systems",
+    ],
+    gradient: "linear-gradient(135deg, #0d2e1f 0%, #0f172a 100%)",
   },
   {
     id: "housing",
@@ -73,13 +65,13 @@ export const projects: Project[] = [
       "Collaborated in an Agile team with frontend, design, and QA roles",
     ],
     screenshots: [
-      { src: "/images/projects/housing/Login%20page.png",             caption: "Sign In" },
-      { src: "/images/projects/housing/Housing%20Requirements.png",   caption: "Step 1 — Housing Requirements" },
-      { src: "/images/projects/housing/About%20You.png",              caption: "Step 2 — Personality & Lifestyle Profile" },
-      { src: "/images/projects/housing/House%20Lists.png",            caption: "Browse Student Homes" },
-      { src: "/images/projects/housing/Housing%20Details.png",        caption: "Property Details & Roommate Matches" },
-      { src: "/images/projects/housing/Chat%20Page.png",              caption: "Matched Group Chat" },
-      { src: "/images/projects/housing/Green%20Computing.png",        caption: "Green Computing Initiative" },
+      { src: "/images/projects/housing/Login%20page.png",           caption: "Sign In" },
+      { src: "/images/projects/housing/Housing%20Requirements.png", caption: "Step 1 — Housing Requirements" },
+      { src: "/images/projects/housing/About%20You.png",            caption: "Step 2 — Personality & Lifestyle Profile" },
+      { src: "/images/projects/housing/House%20Lists.png",          caption: "Browse Student Homes" },
+      { src: "/images/projects/housing/Housing%20Details.png",      caption: "Property Details & Roommate Matches" },
+      { src: "/images/projects/housing/Chat%20Page.png",            caption: "Matched Group Chat" },
+      { src: "/images/projects/housing/Green%20Computing.png",      caption: "Green Computing Initiative" },
     ],
     learnedPoints: [
       "What it takes to go from design to a working product — bridging requirements, backend logic, and a live frontend in a team setting",
@@ -108,11 +100,7 @@ export const projects: Project[] = [
       "This site started as a simple need: I wanted somewhere to put my projects. It turned into a project in itself — and intentionally so. Built with Next.js and TypeScript, no UI libraries, just CSS variables and plain React. I used AI-assisted development to move fast, but made sure to understand every design decision along the way. The portfolio grows as I grow — new features get added as I learn them, not before.",
     tags: ["Next.js", "TypeScript", "CSS", "Vercel"],
     links: [
-      {
-        label: "Source",
-        url: "https://github.com/JMLal250209/Personal_website",
-        primary: true,
-      },
+      { label: "Source", url: "https://github.com/JMLal250209/Personal_website", primary: true },
     ],
     highlights: [
       "Custom dark UI built entirely with CSS variables — no Tailwind, no component libraries",
@@ -122,8 +110,6 @@ export const projects: Project[] = [
       "Auto-deploys to Vercel on every push to main",
     ],
     overviewLabel: "How I Built This",
-    hideScreenshots: true,
-    gradient: "linear-gradient(135deg, #1a0a3e 0%, #0f172a 100%)",
     learnedIntro: "This portfolio is a living project — here's what building it has taught me so far.",
     learnedPoints: [
       "How to structure a Next.js App Router project cleanly from scratch",
@@ -137,23 +123,21 @@ export const projects: Project[] = [
       "Add light / dark / system theme toggle",
       "Continue adding projects and course reflections as I learn and build",
     ],
+    gradient: "linear-gradient(135deg, #1a0a3e 0%, #0f172a 100%)",
+    hideScreenshots: true,
   },
   {
     id: "chatbot",
     title: "AI Chatbot",
+    status: "In progress",
     shortDesc:
       "A personal project building an AI-powered chatbot using the Claude API — designed with a modular architecture to support future AI agent integrations.",
     longDesc:
       "A personal project building an AI chatbot from the ground up using the Claude API. The focus has been on getting the architecture right: a modular backend that handles message routing and user–AI interaction, a frontend chat interface, and a system structured for extensibility — so features like memory, RAG, and multiple AI agents can be layered in over time. The goal is to build this once as a solid foundation, then integrate it across different surfaces.",
     tags: ["Claude API", "Python", "RAG", "LLMs"],
     links: [
-      {
-        label: "GitHub",
-        url: "https://github.com/JMLal250209/ai-chatbot",
-        primary: true,
-      },
+      { label: "GitHub", url: "https://github.com/JMLal250209/ai-chatbot", primary: true },
     ],
-    status: "In progress",
     highlights: [
       "Built an AI-powered chatbot using the Claude API for real-time conversational interactions",
       "Designed a modular architecture to support future integration of multiple AI agents and tools",
@@ -169,6 +153,12 @@ export const projects: Project[] = [
     hideDetailPage: true,
   },
 ];
+
+export const projects: Project[] = [..._projects].sort((a, b) => {
+  if (a.status && !b.status) return -1;
+  if (!a.status && b.status) return 1;
+  return (b.date ?? "").localeCompare(a.date ?? "");
+});
 
 export function getProjectById(id: string): Project | undefined {
   return projects.find((p) => p.id === id);
