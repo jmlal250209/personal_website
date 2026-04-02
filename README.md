@@ -36,6 +36,7 @@ The site is built with Next.js and deployed via Vercel.
 - Screenshot gallery with full-screen lightbox and keyboard navigation (← → Escape)
 - Fully static — pre-rendered at build time via Next.js
 - Auto-deploys to Vercel on every push to main
+- Project completion dates with automatic sorting (in-progress first, then newest to oldest)
 - Responsive design (ongoing improvements)
 
 ---
