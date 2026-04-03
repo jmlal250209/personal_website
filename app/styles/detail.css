@@ -19,7 +19,7 @@
   font-size: 120px;
   font-weight: 700;
   letter-spacing: -4px;
-  color: rgba(255, 255, 255, 0.08);
+  color: var(--detail-initial-color);
   user-select: none;
   position: absolute;
 }
@@ -27,7 +27,7 @@
 .detail-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10, 15, 30, 0.9) 0%, transparent 60%);
+  background: linear-gradient(to top, var(--hero-overlay) 0%, transparent 60%);
 }
 
 .detail-hero-content {
@@ -52,16 +52,16 @@
   color: var(--text-muted);
   text-decoration: none;
   padding: 6px 12px;
-  background: rgba(10, 15, 30, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--detail-back-bg);
+  border: 1px solid var(--border);
   border-radius: 8px;
   backdrop-filter: blur(10px);
   transition: background 0.2s, color 0.2s;
 }
 
 .detail-back:hover {
-  background: rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: var(--detail-back-bg-hover);
+  color: var(--detail-back-color-hover);
 }
 
 .detail-hero-title {

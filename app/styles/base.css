@@ -14,6 +14,36 @@
   --accent-glow: rgba(99, 102, 241, 0.15);
   --blue: #60a5fa;
   --green: #34d399;
+  --nav-bg: rgba(10, 15, 30, 0.8);
+  --h1-gradient-start: #e2e8f0;
+  --hero-overlay: rgba(10, 15, 30, 0.9);
+  --detail-back-bg: rgba(10, 15, 30, 0.75);
+  --detail-back-bg-hover: rgba(255, 255, 255, 0.15);
+  --detail-back-color-hover: #fff;
+  --detail-initial-color: rgba(255, 255, 255, 0.08);
+  --modal-initial-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="light"] {
+  --bg: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-elevated: #f1f5f9;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --text-faint: #94a3b8;
+  --accent: #4f52d9;
+  --accent-glow: rgba(99, 102, 241, 0.08);
+  --blue: #2563eb;
+  --green: #059669;
+  --nav-bg: rgba(248, 250, 252, 0.85);
+  --h1-gradient-start: #0f172a;
+  --hero-overlay: rgba(248, 250, 252, 0.88);
+  --detail-back-bg: rgba(255, 255, 255, 0.85);
+  --detail-back-bg-hover: rgba(15, 23, 42, 0.1);
+  --detail-back-color-hover: var(--text);
+  --detail-initial-color: rgba(0, 0, 0, 0.06);
+  --modal-initial-color: rgba(0, 0, 0, 0.08);
 }
 
 html {

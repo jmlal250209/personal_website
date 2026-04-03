@@ -1,5 +1,6 @@
 import ProjectsSection from "@/app/components/ProjectsSection";
 import CoursesSection from "@/app/components/CoursesSection";
+import ThemeToggle from "@/app/components/ThemeToggle";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
         </ul>
+        <ThemeToggle />
       </nav>
 
       <div className="container">

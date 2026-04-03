@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProjectById, projects, formatProjectDate } from "@/app/lib/projects";
 import ScreenshotsGallery from "@/app/components/ScreenshotsGallery";
+import ThemeToggle from "@/app/components/ThemeToggle";
 
 export async function generateStaticParams() {
   return projects.filter((p) => !p.hideDetailPage).map((p) => ({ id: p.id }));
@@ -49,6 +50,7 @@ export default async function ProjectDetailPage({
           <li><a href="/#projects">Projects</a></li>
           <li><a href="/#skills">Skills</a></li>
         </ul>
+        <ThemeToggle />
       </nav>
 
       {/* Hero banner */}
